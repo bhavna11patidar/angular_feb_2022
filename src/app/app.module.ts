@@ -8,6 +8,8 @@ import { TestTemplateInlineComponent } from './test-template-inline/test-templat
 import { TestStyleInlineComponent } from './test-style-inline/test-style-inline.component';
 import { TestTemplateStyleInlineComponent } from './test-template-style-inline/test-template-style-inline.component';
 import {UserAuthModule} from './user-auth/user-auth.module';
+import { BasicFormComponent } from './basic-form/basic-form.component';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,10 +18,12 @@ import {UserAuthModule} from './user-auth/user-auth.module';
     TestTemplateInlineComponent,
     TestStyleInlineComponent,
     TestTemplateStyleInlineComponent,
+    BasicFormComponent,
   ],
   imports: [
     BrowserModule,
     UserAuthModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -100,6 +100,11 @@ export class AppComponent {
     this.bgColor="skyblue";
     }
   }
+
+  display=true;
+  toggleElement(){
+    this.display=!this.display;
+  }
 }
 
 
