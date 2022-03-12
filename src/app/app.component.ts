@@ -8,7 +8,7 @@ import { retry } from 'rxjs';
 })
 export class AppComponent {
   title = 'hello world';
-  myname="Bhavna patidar";
+  /*myname="Bhavna patidar";
   getValue(){
     return "Get value function";
   }
@@ -104,6 +104,54 @@ export class AppComponent {
   display=true;
   toggleElement(){
     this.display=!this.display;
+  }
+  */
+ //data:number=10;
+ /*data:number=Math.floor(Math.random()*10);
+ users=[
+  {
+    name:"Bhavna", email:"bhavna@gmail.com"
+  },
+  {
+    name:"Swapni", email:"swapnil@gmail.com"
+  },
+  {
+    name:"Ninad", email:"ninad@gmail.com"
+  },
+  {
+    name:"Mehul", email:"mehul@gmail.com"
+  }
+];
+*/
+childData:string="";
+  updataDataViaChild(item:string){
+    this.childData=item;
+    //console.log(item);
+  }
+  name:string="";
+ /* getVal(data:string){
+    console.log(data);
+  }
+  */
+  getVal(data:HTMLInputElement){
+    console.log(data);
+  }
+  myname:string="Bhavna";
+  convertCaps(){
+    return this.myname.toUpperCase();
+  }
+  today=new Date();
+  greet="This is my Angular session";
+
+  sum(...num:number[]){
+   // console.log(num);
+   var d=0;
+      for(var x=0; x<num.length; x++){
+          d+=num[x];
+          //console.log(this.d);
+      }
+
+      return d;
   }
 }
 
