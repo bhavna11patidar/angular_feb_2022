@@ -18,6 +18,9 @@ import { ChildComponent } from './child/child.component';
 import { ReusableComponent } from './reusable/reusable.component';
 import { Child1Component } from './child1/child1.component';
 import { UsdtoinrPipe } from './pipes/usdtoinr.pipe';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { RreactiveFormsComponent } from './rreactive-forms/rreactive-forms.component';
+import {ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +34,8 @@ import { UsdtoinrPipe } from './pipes/usdtoinr.pipe';
     ReusableComponent,
     Child1Component,
     UsdtoinrPipe,
+    TemplateDrivenFormComponent,
+    RreactiveFormsComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,8 @@ import { UsdtoinrPipe } from './pipes/usdtoinr.pipe';
     NgbModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
